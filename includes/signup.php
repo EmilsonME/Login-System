@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if(isset($_POST['submit'])) {
 	require 'dbconnect.php';
 	
 	$firstname = mysqli_real_escape_string($con, stripslashes($_POST['firstname']));
